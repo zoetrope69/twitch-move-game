@@ -39,14 +39,9 @@ const IMAGES = {
     preloadImage(`${GLITCH_DOMAIN}twitch-move-person-3.png?v=1621452558013`),
     preloadImage(`${GLITCH_DOMAIN}twitch-move-person-2.png?v=1621452557930`)
   ],
-  target: {
-    outline: preloadImage(
-      `${GLITCH_DOMAIN}twitch-move-target-outline.png?v=1621452558183`
-    ),
-    complete: preloadImage(
-      `${GLITCH_DOMAIN}twitch-move-target-complete.png?v=1621452557979`
-    )
-  }
+  target: preloadImage(
+    `${GLITCH_DOMAIN}twitch-move-target-outline.png?v=1621533742129`
+  )
 };
 
 function getURLParamChannel() {
@@ -80,7 +75,7 @@ async function showPersonAndTarget() {
     <main>
       <img
         alt=""
-        src="${IMAGES.target.outline}"
+        src="${IMAGES.target}"
         class="target"
         />
       <img
