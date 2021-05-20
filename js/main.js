@@ -30,18 +30,14 @@ function preloadImage(filePath) {
   return image.src;
 }
 
-const GLITCH_DOMAIN =
-  "https://cdn.glitch.com/069ba6f8-5fb3-400c-83bb-f77799551169%2F";
 const IMAGES = {
   person: [
-    preloadImage(`${GLITCH_DOMAIN}twitch-move-person-1.png?v=1621452557856`),
-    preloadImage(`${GLITCH_DOMAIN}twitch-move-person-2.png?v=1621452557930`),
-    preloadImage(`${GLITCH_DOMAIN}twitch-move-person-3.png?v=1621452558013`),
-    preloadImage(`${GLITCH_DOMAIN}twitch-move-person-2.png?v=1621452557930`)
+    preloadImage("/images/person-1.png"),
+    preloadImage("/images/person-2.png"),
+    preloadImage("/images/person-3.png"),
+    preloadImage("/images/person-2.png")
   ],
-  target: preloadImage(
-    `${GLITCH_DOMAIN}twitch-move-target-outline.png?v=1621533742129`
-  )
+  target: preloadImage("/images/target.png")
 };
 
 function getURLParamChannel() {
