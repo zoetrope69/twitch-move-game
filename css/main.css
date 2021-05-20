@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: transparent; /* no background in OBS */
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 85vw;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.loaded main {
+  opacity: 1;
+}
+
+.target,
+.person {
+  position: absolute;
+  left: 0;
+  top: calc(50% - (531px / 2));
+}
+
+.target {
+  filter: hue-rotate(0deg);
+  transition: filter 1s ease-in;
+}
+
+.target--complete {
+  filter: hue-rotate(180deg);
+}
+
+.person {
+  transition: transform 0.1s linear;
+}
