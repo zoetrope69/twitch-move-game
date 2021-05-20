@@ -74,11 +74,15 @@ async function showPersonAndTarget() {
   document.body.innerHTML = `
     <main>
       <img
+        width="${IMAGE_WIDTH}"
+        height="${IMAGE_HEIGHT}"
         alt=""
         src="${IMAGES.target}"
         class="target"
         />
       <img
+        width="${IMAGE_WIDTH}"
+        height="${IMAGE_HEIGHT}"
         alt=""
         src="${IMAGES.person[0]}"
         class="person"
